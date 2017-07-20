@@ -1,0 +1,101 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "MBNA Platinum Credit Card - Balance Transfer Offer",
+            "slug": "mbna-platinum",
+            "img": "mbna-balance-transfer-offer.png",
+            "categories": ["Balance Transfer", "Money Transfer"],
+            "rates": {
+                "balance": {
+                    "period": "42",
+                    "rate": "0",
+                    "fee": "2.79"
+                },
+                "money": {
+                    "period": "20",
+                    "rate": "0",
+                    "fee": "4"
+                },
+                "purchases": {
+                    "variable": true,
+                    "period": "0",
+                    "rate": "18.9"
+                }
+            },
+            "info": "No annual fee."
+        }, {
+            "id": "2",
+            "name": "Arsenal Credit Card",
+            "slug": "arsenal",
+            "img": "arsenal.png",
+            "categories": ["Balance Transfer", "Money Transfer", "Transfer & Purchase", "Football"],
+            "rates": {
+                "balance": {
+                    "period": "29",
+                    "rate": "0",
+                    "fee": "2.95"
+                },
+                "money": {
+                    "period": "29",
+                    "rate": "0",
+                    "fee": "4"
+                },
+                "purchases": {
+                    "variable": false,
+                    "period": "29",
+                    "rate": "18.9"
+                }
+            },
+            "info": "Promotional offers on purchase rates"
+        }, {
+            "id": "3",
+            "name": "Intu Credit Card",
+            "slug": "intu",
+            "img": "intu.png",
+            "categories": ["Transfer & Purchase", "Rewards"],
+            "rates": {
+                "balance": {
+                    "period": "12",
+                    "rate": "0",
+                    "fee": "2.99"
+                },
+                "money": {
+                    "period": "12",
+                    "rate": "0",
+                    "fee": "4"
+                },
+                "purchases": {
+                    "variable": false,
+                    "period": "12",
+                    "rate": "0"
+                }
+            },
+            "info": "Earn intu Gift Cards on card purchases and access exclusive offers and discounts."
+        }, {
+            "id": "4",
+            "name": "Emirates Skywards Elite",
+            "slug": "emirates-skywards-elite",
+            "img": "emirates-skywards-elite.png",
+            "categories": ["Rewards", "Airline"],
+            "rates": {
+                "balance": {
+                    "period": "6",
+                    "rate": "0",
+                    "fee": "3"
+                },
+                "money": {
+                    "period": "6",
+                    "rate": "0",
+                    "fee": "3"
+                },
+                "purchases": {
+                    "variable": true,
+                    "period": "22",
+                    "rate": "0"
+                }
+            },
+            "info": "Earn Skywards Miles for every pound you spend and get closer to your next reward flight."
+        }
+    ]
+}
