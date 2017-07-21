@@ -20,12 +20,3 @@ services:
       APP_DEBUG: 'true'
       APP_LOCALE: en
       APP_FALLBACK_LOCALE: en
-  node:
-    build: images/node
-    command: npm run start
-    links:
-      - nginx
-    volumes:
-      - ./app:/usr/app
-    ports:
-      - "3000:3000"
