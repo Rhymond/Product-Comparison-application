@@ -14,26 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = $this->getProducts();
-
-        // Update products
-        foreach ($products as &$product) {
-//            $product['img'] = 'img/' . $product['img'];
-        }
-
-        return $products;
-    }
-
-    public function image(Request $request, $image)
-    {
-        $imagePath = resource_path() . '/images/' . $image;
-
-        if (!file_exists($imagePath)) {
-            abort(404);
-        }
-
-        $file = file_get_contents($imagePath);
-        return response($file, 200)->header('Content-Type', 'image/png');
+        return $this->getProducts();
     }
 
     /**

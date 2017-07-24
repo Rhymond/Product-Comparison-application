@@ -16,9 +16,7 @@ class Home extends React.Component {
     const compareProducts = products.filter(product => product.compare);
 
     return (
-      <div className="Home">
-        <h1>Home</h1>
-
+      <div className="Home mt-5">
         <ProductList products={products} compare={actions.compare}/>
         <Compare products={compareProducts}/>
       </div>
