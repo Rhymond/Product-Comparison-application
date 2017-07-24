@@ -6,7 +6,7 @@ services:
     links:
       - php
     ports:
-      - "80:80"
+      - "3001:80"
   php:
     build: images/php
     volumes:
@@ -20,3 +20,14 @@ services:
       APP_DEBUG: 'true'
       APP_LOCALE: en
       APP_FALLBACK_LOCALE: en
+  node:
+    build: images/node
+    links:
+      - nginx
+    volumes:
+      - ./app:/usr/app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=dev
+    command: npm run start

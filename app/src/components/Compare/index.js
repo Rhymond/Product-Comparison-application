@@ -16,7 +16,7 @@ const Compare = ({products}) =>
             {products.map(product =>
               <td key={product.id}>
                 <img width="100%"
-                     src={'http://localhost/v1/api/products/image/' + product.img}
+                     src={`${process.env.REACT_APP_API_URL}/v1/api/products/image/${product.img}`}
                      alt={product.name}/>
               </td>
             )}

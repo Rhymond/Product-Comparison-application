@@ -7,10 +7,10 @@ import {Provider} from 'react-redux'
 import thunkMiddleware from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 import reducer from './reducers'
-import App from './containers/App';
+import App from './containers/App'
 
-import 'bootstrap/dist/css/bootstrap.css';
-import './index.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import './index.css'
 
 const loggerMiddleware = createLogger()
 
